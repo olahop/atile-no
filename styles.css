@@ -11,10 +11,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.logo-img-laptop {
-  display: none;
-}
-.logo-img-mobile {
+.logo-img {
   width: 200px;
   height: 200px;
 }
@@ -42,12 +39,8 @@ a {
   .text-container {
     margin: auto 4em;
   }
-  .logo-img-laptop {
-    display: block;
-    width: 350px;
-    height: 350px;
-  }
-  .logo-img-mobile {
-    display: none;
+  .logo-img {
+    width: 400px;
+    height: 400px;
   }
 }
