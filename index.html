@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
   <head>
     <title>Atile</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Atile nettsider" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'none'" />
     <link rel="icon" href="./favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
@@ -12,10 +14,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="logo-container">
+      <img class="logo-img-laptop" src="./logo-350.webp" alt="logo" />
+      <img class="logo-img-mobile" src="./logo-120.webp" alt="logo" />
+    </div>
+    <div class="text-container">
       <p>
-        Hei!
-        <br /><br />
         Atile er et relativt ungt IT-konsulentselskap basert i Oslo.
         <br /><br />
         Vi kan bistå med programvareutvikling for web, API-løsninger og generell
@@ -24,16 +28,6 @@
         Har du spørsmål? Ta gjerne kontakt med oss på
         <a href="mailto:hei@atile.no">hei@atile.no</a>.
       </p>
-    </div>
-    <div class="img-container">
-      <img class="logo-img" src="./logo.png" />
-    </div>
-    <div class="profile-container">
-      <img class="profile-img" src="./contact.png" />
-      <div class="profile-text">
-        <p>Ola Opheim</p>
-        <p class="subtext">Kontaktperson</p>
-      </div>
     </div>
   </body>
 </html>
