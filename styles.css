@@ -1,73 +1,76 @@
 body {
-    background: #122620;
-    color: #D6AD60;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.25em;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-display: flex;
-flex-direction: column;}
-
+  background: #122620;
+  color: #d6ad60;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
 a {
-    color: #D6AD60;
-    text-decoration: none;
+  color: #d6ad60;
+  text-decoration: none;
 }
 .container {
-    display: block;
-    width: 340px;
-    margin: auto;
-    order:2;
+  width: 340px;
+  margin: auto;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: #122620;
 }
 .img-container {
-    display: block;
-    width: 340px;
-    margin: auto;
-    order:1;
+  display: flex;
+  width: 340px;
+  margin: auto;
+  order: 1;
 }
 .logo-img {
-    width: 120px;
+  width: 120px;
 }
 .profile-container {
-    display: flex;
-    justify-content: center;
-    margin: 2em 0;
-    order: 3;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  order: 3;
 }
 .profile-img {
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-    border: 1.5px solid #D6AD60;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border: 1.5px solid #d6ad60;
 }
-.profile-text{
-    width: 200px;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.profile-text {
+  width: 200px;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.subtext  {
-    font-size: .5em;
-    margin-top: -15px;
+.subtext {
+  font-size: 0.5em;
+  margin-top: -15px;
 }
 
 @media only screen and (min-width: 600px) {
-    body {
-        flex-direction: row;
-        justify-content: space-evenly;
-        height: 98vh;
-    }
-    .container {
-        order:0;
-    }
-    .logo-img {
-        width: 350px;
-    }
-    .profile-container {
-        margin: auto;
-    }
+  body {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 98vh;
   }
+  .container {
+    order: 0;
+  }
+  .logo-img {
+    width: 350px;
+  }
+  .profile-container {
+    margin: auto;
+  }
+}
