@@ -109,10 +109,9 @@ a {
     grid-row-start: 3;
     grid-row-end: 4;
     display: flex;
+    padding: 0% 15%;
   }
   .logo-img {
-    max-width: 70%;
-    max-height: 70%;
     margin: auto;
   }
 }
