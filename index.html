@@ -1,41 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nb">
   <head>
-    <title>Atile</title>
+    <title>Atile – Systemutvikling &amp; AWS</title>
     <meta charset="UTF-8" />
-    <meta name="description" content="Atile-nettside" />
+    <meta
+      name="description"
+      content="Atile – Senior Systemutvikler og Sertifisert AWS Løsningsarkitekt. Hjelper startups og bedrifter med webutvikling, skyarkitektur og KI-integrasjon."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       http-equiv="Content-Security-Policy"
       content="script-src 'none'; object-src 'none'"
     />
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./assets/favicon.ico" />
     <link rel="canonical" href="https://atile.no" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="logo-container">
-      <img class="logo-img" src="./logo-800.webp" alt="logo" />
+    <a href="#main-content" class="skip-link">Hopp til innhold</a>
+
+    <!-- CSS-only dark/light toggle – unchecked = dark (default) -->
+    <input type="checkbox" id="light-toggle" />
+
+    <div id="site">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-inner container">
+          <a
+            href="/"
+            class="logo-link"
+            aria-label="Atile – tilbake til forsiden"
+          >
+            <img
+              class="logo-img logo-dark-img"
+              src="./assets/logo-dark.png"
+              alt="Atile logo"
+            />
+            <img
+              class="logo-img logo-light-img"
+              src="./assets/logo-light.png"
+              alt="Atile logo"
+            />
+          </a>
+          <label
+            for="light-toggle"
+            class="theme-toggle"
+            aria-label="Bytt mellom mørkt og lyst tema"
+            title="Bytt tema"
+          >
+            <span class="toggle-icon sun-icon" aria-hidden="true">☀</span>
+            <span class="toggle-pill">
+              <span class="toggle-knob"></span>
+            </span>
+            <span class="toggle-icon moon-icon" aria-hidden="true">☽</span>
+          </label>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <!-- HERO -->
+        <section class="section hero" aria-label="Introduksjon">
+          <div class="container hero-inner">
+            <div class="hero-text">
+              <span class="eyebrow">IT-konsulent</span>
+              <h1 class="hero-title">
+                Senior Systemutvikler &amp; Sertifisert AWS Løsningsarkitekt
+              </h1>
+              <p class="hero-desc">
+                Bistår med programvareutvikling for web, skyarkitektur og
+                KI-integrasjon.
+              </p>
+              <div class="hero-ctas">
+                <a href="mailto:ola.opheim@atile.no" class="btn-primary"
+                  >Send meg en e-post</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/ola-hermann-opheim-41371114b"
+                  class="btn-secondary"
+                  >Ta kontakt på LinkedIn</a
+                >
+              </div>
+            </div>
+            <div class="hero-image">
+              <img
+                src="./assets/headshot.jpg"
+                alt="Ola Opheim"
+                class="headshot"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- HVA JEG DRIVER MED -->
+        <section class="section about" aria-labelledby="about-heading">
+          <div class="container">
+            <h2 class="section-title" id="about-heading">Hva jeg bistår med</h2>
+
+            <p class="about-intro">
+              For startups og bedrifter ønsker jeg å hjelpe med å bygge og
+              skalere løsninger uten at skyinfrastrukturen blir en flaskehals
+              eller spiser en stor del av kaka. Det er også spennende hvordan KI
+              anvendt riktig, kan frigjøre tid fra repetitive oppgaver. Jeg har
+              god erfaring med at slike grep kan utgjøre en betydelig forskjell
+              på systemet, brukeropplevelsen og kostnader fra prosjekter hos
+              blant andre Trondheim kommune, Sensor Innovation AS og en av
+              Norges største banker.
+            </p>
+
+            <div class="cards-grid">
+              <article class="card">
+                <div class="card-icon" aria-hidden="true">🚀</div>
+                <h3 class="card-title">MVP &amp; skalerbar arkitektur</h3>
+                <p>
+                  Fra idé til fungerende produkt, eller fra prototype til en
+                  løsning som tåler vekst. Kostnadseffektiv og skalerbar
+                  arkitektur som kan vokse med behovene.
+                </p>
+              </article>
+
+              <article class="card">
+                <div class="card-icon" aria-hidden="true">☁️</div>
+                <h3 class="card-title">Sky &amp; kostnader</h3>
+                <p>
+                  Redusere kostnader og forbedre arkitektur i tråd med
+                  <a
+                    href="https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+                    class="inline-link"
+                    >AWS Well-Architected Framework</a
+                  >. Portabilitet og unngå vendor lock-in.
+                </p>
+              </article>
+
+              <article class="card">
+                <div class="card-icon" aria-hidden="true">🤖</div>
+                <h3 class="card-title">KI &amp; automatisering</h3>
+                <p>
+                  Utforske om og hvordan KI kan integreres for å effektivisere
+                  repetitive, mønsterdrevne oppgaver.
+                </p>
+              </article>
+
+              <article class="card">
+                <div class="card-icon" aria-hidden="true">⚙️</div>
+                <h3 class="card-title">Videreutvikling av systemer</h3>
+                <p>
+                  Tradisjonell systemutvikling, vedlikehold og videreutvikling
+                  av eksisterende systemer, både for webapplikasjoner og
+                  bakenforliggende systemer. Noen av de mest relevante
+                  teknologiene jeg har erfaring med er: AWS, Terraform, Docker,
+                  CI/CD, Python, Node.js, React, Go, Kotlin, Spring, SQL, NoSQL.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- TIPS & TRIKS -->
+        <section class="section tips" aria-labelledby="tips-heading">
+          <div class="container">
+            <h2 class="section-title" id="tips-heading">Tips &amp; triks</h2>
+            <div class="tips-list">
+              <article class="tip-item">
+                <div class="tip-number" aria-hidden="true">01</div>
+                <div class="tip-body">
+                  <h3 class="tip-title">Claude Code for PoC</h3>
+                  <p>
+                    Av de LLM-modellene jeg har testet, synes jeg Claude Code er
+                    et kraftig verktøy å bygge en PoC på, både med og uten
+                    utviklingsbakgrunn.
+                  </p>
+                </div>
+              </article>
+
+              <article class="tip-item">
+                <div class="tip-number" aria-hidden="true">02</div>
+                <div class="tip-body">
+                  <h3 class="tip-title">Hold fokus på kjernen</h3>
+                  <p>
+                    Hold grensesnittet til de viktigste business-funksjonene. Om
+                    ikke forsvinner de nyttige funksjonene i et hav av mindre
+                    viktige. Dette er en utfordring nå som generert kode kan
+                    kode opp alt man ber om.
+                  </p>
+                </div>
+              </article>
+
+              <article class="tip-item">
+                <div class="tip-number" aria-hidden="true">03</div>
+                <div class="tip-body">
+                  <h3 class="tip-title">Gjenbruk eksisterende ML-modeller</h3>
+                  <p>
+                    Det finnes allerede mange ML-modeller som kan anvendes.
+                    Sjekk om de kan benyttes før man trener en egen. Det kan
+                    spare både tid og miljø.
+                  </p>
+                </div>
+              </article>
+
+              <article class="tip-item">
+                <div class="tip-number" aria-hidden="true">04</div>
+                <div class="tip-body">
+                  <h3 class="tip-title">Portabilitet med Docker</h3>
+                  <p>
+                    AWS er utmerket som infrastruktur for alle arkitekturer, men
+                    bruk av nøytral programvare som Docker for å skape et lag
+                    mellom infrastruktur og systemet, gjør at man raskt kan
+                    flytte til en annen skyleverandør uten å skrive om
+                    applikasjonene.
+                  </p>
+                </div>
+              </article>
+
+              <article class="tip-item">
+                <div class="tip-number" aria-hidden="true">05</div>
+                <div class="tip-body">
+                  <h3 class="tip-title">
+                    Riktig skytjeneste til riktig formål krever utforsking
+                  </h3>
+                  <p>
+                    Ofte er det mye å hente på å endre eller ta i bruk riktige
+                    tjenester til riktig formål. AWS har mange ressurser for å
+                    finne riktig arkitektur for sitt use case.
+                  </p>
+                </div>
+              </article>
+
+              <article class="tip-item">
+                <div class="tip-number" aria-hidden="true">06</div>
+                <div class="tip-body">
+                  <h3 class="tip-title">
+                    AI løser ikke alt, men man bør gi det en sjanse
+                  </h3>
+                  <p>
+                    AI kommer ikke til å løse alle effektiviserings- eller
+                    automatiseringsoppgaver, men dersom man ikke gir det en
+                    sjanse, er det noen andre som kommer til å gjøre det, og da
+                    mister man konkurransekraft.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p class="footer-copy">&copy; 2026 Atile AS</p>
+        </div>
+      </footer>
     </div>
-    <div class="text-container-1">
-      <p>Atile er et relativt ungt IT-konsulentselskap basert i Oslo</p>
-    </div>
-    <div class="text-container-2">
-      <p>
-        Vi kan bistå med programvareutvikling for web, API-løsninger og generell
-        bruk av nettsky
-      </p>
-    </div>
-    <div class="text-container-3">
-      <p>
-        Har du spørsmål? Ta gjerne kontakt med
-        <a href="mailto:ola.opheim@atile.no">ola.opheim@atile.no</a>
-      </p>
-    </div>
-    <div class="text-container-4"></div>
+    <!-- /#site -->
   </body>
 </html>
