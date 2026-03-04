@@ -12,8 +12,7 @@
       http-equiv="Content-Security-Policy"
       content="script-src https://static.cloudflareinsights.com; object-src 'none'"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="./assets/headshot.webp" as="image" type="image/webp" fetchpriority="high" />
     <link rel="icon" href="./assets/favicon.ico" />
     <link rel="canonical" href="https://atile.no" />
     <meta property="og:type" content="website" />
@@ -26,10 +25,6 @@
     <meta property="og:image" content="https://atile.no/assets/headshot.jpg" />
     <meta property="og:locale" content="nb_NO" />
     <meta name="msvalidate.01" content="C1C4B8C06678D1ACF82505AE565515AB" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
@@ -128,6 +123,7 @@
                   class="headshot"
                   width="440"
                   height="440"
+                  fetchpriority="high"
                 />
               </picture>
             </div>
