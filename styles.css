@@ -2,7 +2,9 @@
    RESET & BASE
    ==================================== */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,29 +29,34 @@
    ==================================== */
 
 #site {
-  --bg:           #0F172A;
-  --bg-alt:       #1E293B;
-  --bg-card:      #1E293B;
-  --text:         #F1F5F9;
-  --text-muted:   #94A3B8;
-  --text-subtle:  #64748B;
-  --accent:       #60A5FA;
-  --accent-hover: #93C5FD;
-  --border:       #334155;
-  --shadow:       0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2);
-  --shadow-hover: 0 4px 12px rgba(96, 165, 250, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
-  --tag-bg:       #1E3A5F;
-  --tag-text:     #93C5FD;
-  --toggle-track: #2563EB;
-  --tip-num:      #60A5FA;
+  --bg: #0f172a;
+  --bg-alt: #1e293b;
+  --bg-card: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --border: #334155;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-hover:
+    0 4px 12px rgba(96, 165, 250, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
+  --tag-bg: #1e3a5f;
+  --tag-text: #93c5fd;
+  --toggle-track: #2563eb;
+  --tip-num: #60a5fa;
+  --btn-primary-bg: #2563eb; /* darker blue – white text gives 6.8:1 contrast */
+  --btn-primary-text: #ffffff;
 
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
-  font-family: 'Inter', 'Roboto', sans-serif;
+  font-family: "Inter", "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 /* ====================================
@@ -57,21 +64,24 @@
    ==================================== */
 
 #light-toggle:checked ~ #site {
-  --bg:           #F8FAFC;
-  --bg-alt:       #FFFFFF;
-  --bg-card:      #FFFFFF;
-  --text:         #0F172A;
-  --text-muted:   #475569;
-  --text-subtle:  #94A3B8;
-  --accent:       #2563EB;
-  --accent-hover: #1D4ED8;
-  --border:       #E2E8F0;
-  --shadow:       0 1px 3px rgba(15, 23, 42, 0.08), 0 4px 16px rgba(15, 23, 42, 0.04);
-  --shadow-hover: 0 4px 12px rgba(37, 99, 235, 0.15), 0 8px 24px rgba(15, 23, 42, 0.08);
-  --tag-bg:       #EFF6FF;
-  --tag-text:     #2563EB;
-  --toggle-track: #CBD5E1;
-  --tip-num:      #2563EB;
+  --bg: #f8fafc;
+  --bg-alt: #ffffff;
+  --bg-card: #ffffff;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-subtle: #94a3b8;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 4px 16px rgba(15, 23, 42, 0.04);
+  --shadow-hover:
+    0 4px 12px rgba(37, 99, 235, 0.15), 0 8px 24px rgba(15, 23, 42, 0.08);
+  --tag-bg: #eff6ff;
+  --tag-text: #2563eb;
+  --toggle-track: #cbd5e1;
+  --tip-num: #2563eb;
+  --btn-primary-bg: #2563eb;
+  --btn-primary-text: #ffffff;
 }
 
 /* ====================================
@@ -80,7 +90,7 @@
 
 body {
   margin: 0;
-  background: #0F172A; /* matches dark default so overscroll matches */
+  background: #0f172a; /* matches dark default so overscroll matches */
 }
 
 a {
@@ -124,7 +134,7 @@ img {
   position: absolute;
   top: -100%;
   left: 1rem;
-  background: #2563EB;
+  background: #2563eb;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0 0 6px 6px;
@@ -182,7 +192,9 @@ img {
   z-index: 100;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
-  transition: background 0.3s ease, border-color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .header-inner {
@@ -227,7 +239,9 @@ img {
 .toggle-icon {
   font-size: 1rem;
   line-height: 1;
-  transition: opacity 0.3s ease, color 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Dark default: moon bright, sun dim */
@@ -247,7 +261,7 @@ img {
 
 #light-toggle:checked ~ #site .sun-icon {
   opacity: 1;
-  color: #F59E0B;
+  color: #f59e0b;
 }
 
 .toggle-pill {
@@ -311,7 +325,7 @@ img {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -391,20 +405,22 @@ img {
 
 .btn-primary {
   display: inline-block;
-  background: var(--accent);
-  color: #ffffff;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
   font-weight: 600;
   font-size: 0.875rem;
   padding: 0.7rem 1.4rem;
   border-radius: 8px;
   text-decoration: none;
-  transition: background 0.2s ease, transform 0.15s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: var(--accent-hover);
-  color: #ffffff;
+  background: #1d4ed8;
+  color: var(--btn-primary-text);
   text-decoration: none;
   transform: translateY(-1px);
 }
@@ -419,8 +435,11 @@ img {
   border-radius: 8px;
   border: 2px solid var(--accent);
   text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease,
-              border-color 0.2s ease, transform 0.15s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
 }
 
 .btn-secondary:hover,
@@ -459,8 +478,11 @@ img {
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: var(--shadow);
-  transition: box-shadow 0.25s ease, transform 0.2s ease,
-              background 0.3s ease, border-color 0.3s ease;
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.2s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .card:hover {
@@ -505,8 +527,11 @@ img {
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   box-shadow: var(--shadow);
-  transition: box-shadow 0.2s ease, transform 0.2s ease,
-              background 0.3s ease, border-color 0.3s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .tip-item:hover {
@@ -521,7 +546,6 @@ img {
   line-height: 1;
   flex-shrink: 0;
   min-width: 2.25rem;
-  opacity: 0.4;
   transition: color 0.3s ease;
 }
 
@@ -548,7 +572,9 @@ img {
   padding: 2.5rem 0;
   /* safe-area for iOS home indicator */
   padding-bottom: max(2.5rem, calc(1.5rem + env(safe-area-inset-bottom)));
-  transition: background 0.3s ease, border-color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .footer-inner {
@@ -561,7 +587,7 @@ img {
 
 .footer-copy {
   font-size: 0.8rem;
-  color: var(--text-subtle);
+  color: var(--text-muted);
 }
 
 /* ====================================

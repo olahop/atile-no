@@ -19,7 +19,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://atile.no" />
     <meta property="og:title" content="Atile – Systemutvikling &amp; AWS" />
-    <meta property="og:description" content="Atile – Senior Systemutvikler og Sertifisert AWS Løsningsarkitekt. Hjelper startups og bedrifter med webutvikling, skyarkitektur og KI-integrasjon." />
+    <meta
+      property="og:description"
+      content="Atile – Senior Systemutvikler og Sertifisert AWS Løsningsarkitekt. Hjelper startups og bedrifter med webutvikling, skyarkitektur og KI-integrasjon."
+    />
     <meta property="og:image" content="https://atile.no/assets/headshot.jpg" />
     <meta property="og:locale" content="nb_NO" />
     <meta name="msvalidate.01" content="C1C4B8C06678D1ACF82505AE565515AB" />
@@ -29,20 +32,20 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ola Opheim",
-      "jobTitle": "Senior Systemutvikler & Sertifisert AWS Løsningsarkitekt",
-      "url": "https://atile.no",
-      "email": "ola.opheim@atile.no",
-      "image": "https://atile.no/assets/headshot.jpg",
-      "sameAs": ["https://www.linkedin.com/in/ola-hermann-opheim-41371114b"],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Atile AS"
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ola Opheim",
+        "jobTitle": "Senior Systemutvikler & Sertifisert AWS Løsningsarkitekt",
+        "url": "https://atile.no",
+        "email": "ola.opheim@atile.no",
+        "image": "https://atile.no/assets/headshot.jpg",
+        "sameAs": ["https://www.linkedin.com/in/ola-hermann-opheim-41371114b"],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Atile AS"
+        }
       }
-    }
     </script>
   </head>
   <body>
@@ -64,11 +67,15 @@
               class="logo-img logo-dark-img"
               src="./assets/logo-dark.png"
               alt="Atile logo"
+              width="68"
+              height="68"
             />
             <img
               class="logo-img logo-light-img"
               src="./assets/logo-light.png"
               alt="Atile logo"
+              width="68"
+              height="68"
             />
           </a>
           <label
@@ -113,11 +120,16 @@
               </div>
             </div>
             <div class="hero-image">
-              <img
-                src="./assets/headshot.jpg"
-                alt="Ola Opheim"
-                class="headshot"
-              />
+              <picture>
+                <source srcset="./assets/headshot.webp" type="image/webp" />
+                <img
+                  src="./assets/headshot.jpg"
+                  alt="Ola Opheim"
+                  class="headshot"
+                  width="440"
+                  height="440"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -285,6 +297,12 @@
       </footer>
     </div>
     <!-- /#site -->
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1b5586eae48b4e3a9b37ae091bda2023"}'></script><!-- End Cloudflare Web Analytics -->
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "1b5586eae48b4e3a9b37ae091bda2023"}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>
